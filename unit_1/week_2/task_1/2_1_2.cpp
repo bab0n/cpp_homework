@@ -4,11 +4,9 @@ int main(){
     int month, yeahr;
     std::cout << "Month number: ";
     std::cin >> month;
-    // проверка мес€ца на валидность
     if (month > 12 || month < 1){
         return 0;
     }
-    // в “« не было указано что надо вводить год, но
     std::cout << "Yeahr: ";
     std::cin >> yeahr;
     if (month == 2 ){
