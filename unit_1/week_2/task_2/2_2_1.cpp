@@ -1,6 +1,6 @@
-#include<iostream>
+#include <iostream>
 
-int main() {
+int main(){
     int height;
     std::cout << "Pyramid height:  ";
     std::cin >> height;
