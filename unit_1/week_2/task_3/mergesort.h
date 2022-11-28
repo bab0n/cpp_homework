@@ -1,7 +1,6 @@
 #pragma once
 
-void merge(int *arr, int low, int high, int mid)
-{
+void merge(int *arr, int low, int high, int mid){
     int i, j, k, c[50];
     i = low;
     k = low;

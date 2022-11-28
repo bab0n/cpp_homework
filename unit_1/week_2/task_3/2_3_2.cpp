@@ -13,10 +13,10 @@ int main()
     }
     merge_sort(myarray, 0, num-1);
     std::cout << "Sorted array\n";
-    for (int i = 0; i < num; i++)
-    {
+    for (int i = 0; i < num; i++){
         std::cout<<myarray[i]<<" ";
     }
+
     std::cout << std::endl;
     system("pause");
     return 0;
