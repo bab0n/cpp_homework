@@ -1,19 +1,20 @@
 #include <iostream>
 #include <string>
 
-
-int main(){
+int main()
+{
     setlocale(0, "");
     std::string str, substr;
 
-    std::cout << "Что ищем: ";
+    std::cout << "Enter substr: ";
     getline(std::cin, substr);
-    std::cout << "Где ищем:" << std::endl;
+    std::cout << "Enter main str:" << std::endl;
     getline(std::cin, str, ' ');
 
     int count = 0;
     size_t pos = 0;
-    while ((pos = str.find(substr, pos)) != std::string::npos){
+    while ((pos = str.find(substr, pos)) != std::string::npos)
+    {
         pos = str.find(substr, pos + 1);
         ++count;
     }

@@ -45,6 +45,8 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "map": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "bitset": "cpp",
+        "regex": "cpp"
     }
 }

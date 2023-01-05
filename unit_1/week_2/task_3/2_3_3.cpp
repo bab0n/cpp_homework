@@ -1,22 +1,31 @@
 #include <iostream>
 #include "mergesort.h"
 
-int main(){
+float get_median(int *array, int len)
+{
+    if (len % 2 == 0)
+    {
+        return (array[len / 2] + array[len / 2 - 1]) / 2.0;
+    }
+    else
+    {
+        return (array[len / 2]);
+    }
+}
+
+int main()
+{
     int num;
-    std::cout << "Enter number of elements to be sorted: ";
+    std::cout << "Enter number elements for mass: ";
     std::cin >> num;
     int myarray[num];
-    for (int i = 0; i < num; i++) { 
-        std:: cout<<"> ";
+    for (int i = 0; i < num; i++)
+    {
+        std::cout << "> ";
         std::cin >> myarray[i];
     }
-    merge_sort(myarray, 0, num-1);
-    
-    if (num%2 == 0){
-        std::cout << (myarray[num / 2] + myarray[num / 2 - 1]) / 2 << std::endl;
-    }else{
-        std::cout << myarray[num/2] << std::endl;
-    }
+    merge_sort(myarray, 0, num - 1);
+    std::cout << get_median(myarray, num) << std::endl;
 
     system("pause");
     return 0;
