@@ -9,7 +9,7 @@ int main()
     {
         for (int j = 0; j < i; ++j)
         {
-            std::cout << " "; //пробельчики в начале строки
+            std::cout << " ";
         }
         for (int k = 0; k < height - i; ++k)
         {
@@ -20,7 +20,7 @@ int main()
         {
             std::cout << char(35);
         }
-        std::cout << std::endl; // для перехода на новую ступень
+        std::cout << std::endl;
     }
     system("pause");
     std::cout << std::endl
