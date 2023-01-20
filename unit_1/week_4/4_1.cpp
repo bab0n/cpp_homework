@@ -14,6 +14,7 @@ int main()
     std::cout << "Enter file name:\n>";
     std::cin >> line;
     std::fstream in(line);
+    // Проверка расширения файлика
     if (!std::regex_match(line, std::regex("\\w{0,}\\.{1}txt")))
     {
         std::cout << "Non-text file" << std::endl;
