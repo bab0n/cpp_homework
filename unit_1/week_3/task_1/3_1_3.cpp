@@ -126,6 +126,21 @@ int main()
     char str[512];
     std::cout << "String from sensors\n> ";
     std::cin >> str;
+    // 4.3 start
+    int temp_count = 0;
+    for (int i = 1; i < 512; i++)
+    {
+        if (str[i] == '@')
+        {
+            temp_count++;
+        }
+    }
+    if (temp_count == 0)
+    {
+        std::cout << "Entry is incorrect" << std::endl;
+        return 0;
+    }
+    // 4.3 end
     int ids[256];
     double temps[256];
     int ind = split_data(str, ids, temps);
